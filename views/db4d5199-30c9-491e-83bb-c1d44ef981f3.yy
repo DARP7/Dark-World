@@ -6,7 +6,8 @@
     "children": [
         "a7b55147-16e2-4443-9012-963c97a1a14e",
         "a5d2efac-bbe3-4f8d-bfc5-b0dff2963104",
-        "8c3a12c0-0191-4dd7-bc24-13f29fffabf7"
+        "8c3a12c0-0191-4dd7-bc24-13f29fffabf7",
+        "d4ea821e-4129-4bc9-ad92-b5373aae01d5"
     ],
     "filterType": "GMObject",
     "folderName": "sensores",

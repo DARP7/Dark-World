@@ -24,7 +24,7 @@ if(esquivar == 0 and estado != "esquivando"){//no esta esquivando y va a moverse
 			sprite_index = sprite;
 			return 0;
 		}
-		if(!scr_check_for_collision_down()){//checa si empuja hacia abajo----*************************
+		if(scr_check_for_collision_down_movible_v2()){//checa si empuja hacia abajo----*************************
 			if(pushing_counter < 1 and alarm[1] <= 0){
 				alarm[1] = room_speed * 1;
 				return 0;
@@ -36,7 +36,7 @@ if(esquivar == 0 and estado != "esquivando"){//no esta esquivando y va a moverse
 				return 0;
 			}
 		}else{//*************************************************************************************
-			show_debug_message("mmmmmmmm............");
+			//show_debug_message("mmmmmmmm............");
 			pushing_counter = 0;
 			estado = "moviendo";
 		}
@@ -85,6 +85,22 @@ if(esquivar == 0 and estado != "esquivando"){//no esta esquivando y va a moverse
 		estado = "moviendo";
 		image_speed = velocidad_imagen;
 		sprite = spr_heroe_camina_lado_v2;
+		if(scr_check_for_collision_left_movible_v2()){//checa si empuja izquierda----*************************
+			if(pushing_counter < 1 and alarm[1] <= 0){
+				alarm[1] = room_speed * 1;
+				return 0;
+			}
+			if(pushing_counter == 1){
+				estado = "empujando";
+				sprite = spr_heroe_empujando_lado;
+				sprite_index = sprite;
+				return 0;
+			}
+		}else{//*************************************************************************************
+			//show_debug_message("mmmmmmmm............");
+			pushing_counter = 0;
+			estado = "moviendo";
+		}
 		sprite_index = sprite;
 		return 0;
 	}
@@ -93,6 +109,22 @@ if(esquivar == 0 and estado != "esquivando"){//no esta esquivando y va a moverse
 		estado = "moviendo";
 		image_speed = velocidad_imagen;
 		sprite = spr_heroe_camina_lado_v2;
+		if(scr_check_for_collision_right_movible_v2()){//checa si empuja derecha----*************************
+			if(pushing_counter < 1 and alarm[1] <= 0){
+				alarm[1] = room_speed * 1;
+				return 0;
+			}
+			if(pushing_counter == 1){
+				estado = "empujando";
+				sprite = spr_heroe_empujando_lado;
+				sprite_index = sprite;
+				return 0;
+			}
+		}else{//*************************************************************************************
+			//show_debug_message("mmmmmmmm............");
+			pushing_counter = 0;
+			estado = "moviendo";
+		}
 		sprite_index = sprite;
 		return 0;
 	}

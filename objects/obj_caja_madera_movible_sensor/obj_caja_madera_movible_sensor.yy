@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_caja_madera_movible_sensor",
     "eventList": [
-        
+        {
+            "id": "347ca236-d290-48ca-b7eb-e5a6f67dfc2e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "126f209b-5161-4c11-ad41-4add711e47c0"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -25,5 +34,5 @@
     "properties": null,
     "solid": false,
     "spriteId": "1caf36b6-5654-4947-a369-29f4f633ad1f",
-    "visible": true
+    "visible": false
 }

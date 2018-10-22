@@ -187,5 +187,7 @@ if(!global.is_paused){
 	estado = "parado";
 	image_index = 0;
 }
-
+//movible = instance_nearest(x, y - 6, obj_caja_madera_movible);
+//show_debug_message("heroe y: "+string(y));
+//show_debug_message("heroe sensor y: "+string(colisionador.y));
 //show_debug_message("el numero de imagenes de rodar es: "+string(sprite_get_number(spr_heroe_esquivando_frente)));
